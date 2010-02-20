@@ -60,7 +60,8 @@ MainWindow::MainWindow()
     QNetworkProxyFactory::setUseSystemConfiguration(true);
 
 //! [2]
-    view = new QWebView(this);
+//    view = new QWebView(this);
+    view = new ACWebView(this);
     view->load(QUrl("http://www.themeforest.net"));
 //    connect(view, SIGNAL(loadFinished(bool)), SLOT(adjustLocation()));
     connect(view, SIGNAL(titleChanged(QString)), SLOT(adjustTitle()));
@@ -83,10 +84,10 @@ MainWindow::MainWindow()
     QMenu *effectMenu = menuBar()->addMenu(tr("&Help"));
 //    effectMenu->addAction("Highlight all links", this, SLOT(highlightAllLinks()));
 
-    rotateAction = new QAction(this);
-    rotateAction->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
-    rotateAction->setCheckable(true);
-    rotateAction->setText(tr("Turn images upside down"));
+//    rotateAction = new QAction(this);
+//    rotateAction->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
+//    rotateAction->setCheckable(true);
+//    rotateAction->setText(tr("Turn images upside down"));
 //    connect(rotateAction, SIGNAL(toggled(bool)), this, SLOT(rotateImages(bool)));
 //    effectMenu->addAction(rotateAction);
 
@@ -138,7 +139,7 @@ void MainWindow::finishLoading(bool)
     adjustTitle();
 //    view->page()->mainFrame()->evaluateJavaScript(jQuery);
 
-    rotateImages(rotateAction->isChecked());
+//    rotateImages(rotateAction->isChecked());
 }
 //! [6]
 

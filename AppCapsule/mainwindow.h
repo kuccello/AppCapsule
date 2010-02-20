@@ -40,6 +40,7 @@
 ****************************************************************************/
 
 #include <QtGui>
+#include "acwebview.h"
 
 class QWebView;
 QT_BEGIN_NAMESPACE
@@ -71,7 +72,8 @@ protected slots:
 
 private:
     QString jQuery;
-    QWebView *view;
+//    QWebView *view;
+    ACWebView *view;
     QLineEdit *locationEdit;
     QAction *rotateAction;
     int progress;

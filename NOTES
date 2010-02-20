@@ -1,0 +1,2 @@
+- TODO: change behaviour of the right click context menu
+        > inherit the QWebView ,and override ContextMenuEvent 
