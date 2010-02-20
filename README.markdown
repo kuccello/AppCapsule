@@ -11,8 +11,8 @@ The plan is to use Qt as the application container for WebKit, Web Server and Da
 
 You will need to get Qt Creator 1.3.1 for your OS
 
-* [Windows Binary][http://qt.nokia.com/downloads/qt-creator-binary-for-windows]
-* [Mac OS X Binary][http://qt.nokia.com/downloads/qt-creator-binary-for-mac]
-* [Linux 32-Bit Binary][http://qt.nokia.com/downloads/qt-creator-binary-for-linux-x11-32-bit]
-* [Linux 64-Bit Binary][http://qt.nokia.com/downloads/qt-creator-binary-for-linux-x11-64-bit]
+* [Windows Binary](http://qt.nokia.com/downloads/qt-creator-binary-for-windows)
+* [Mac OS X Binary](http://qt.nokia.com/downloads/qt-creator-binary-for-mac)
+* [Linux 32-Bit Binary](http://qt.nokia.com/downloads/qt-creator-binary-for-linux-x11-32-bit)
+* [Linux 64-Bit Binary](http://qt.nokia.com/downloads/qt-creator-binary-for-linux-x11-64-bit)
 
