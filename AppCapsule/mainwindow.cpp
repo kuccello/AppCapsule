@@ -61,40 +61,40 @@ MainWindow::MainWindow()
 
 //! [2]
     view = new QWebView(this);
-    view->load(QUrl("http://www.google.com/ncr"));
-    connect(view, SIGNAL(loadFinished(bool)), SLOT(adjustLocation()));
+    view->load(QUrl("http://www.themeforest.net"));
+//    connect(view, SIGNAL(loadFinished(bool)), SLOT(adjustLocation()));
     connect(view, SIGNAL(titleChanged(QString)), SLOT(adjustTitle()));
     connect(view, SIGNAL(loadProgress(int)), SLOT(setProgress(int)));
     connect(view, SIGNAL(loadFinished(bool)), SLOT(finishLoading(bool)));
 
-    locationEdit = new QLineEdit(this);
-    locationEdit->setSizePolicy(QSizePolicy::Expanding, locationEdit->sizePolicy().verticalPolicy());
-    connect(locationEdit, SIGNAL(returnPressed()), SLOT(changeLocation()));
+//    locationEdit = new QLineEdit(this);
+//    locationEdit->setSizePolicy(QSizePolicy::Expanding, locationEdit->sizePolicy().verticalPolicy());
+//    connect(locationEdit, SIGNAL(returnPressed()), SLOT(changeLocation()));
 
-    QToolBar *toolBar = addToolBar(tr("Navigation"));
-    toolBar->addAction(view->pageAction(QWebPage::Back));
-    toolBar->addAction(view->pageAction(QWebPage::Forward));
-    toolBar->addAction(view->pageAction(QWebPage::Reload));
-    toolBar->addAction(view->pageAction(QWebPage::Stop));
-    toolBar->addWidget(locationEdit);
+    //QToolBar *toolBar = addToolBar(tr("Navigation"));
+//    toolBar->addAction(view->pageAction(QWebPage::Back));
+//    toolBar->addAction(view->pageAction(QWebPage::Forward));
+//    toolBar->addAction(view->pageAction(QWebPage::Reload));
+//    toolBar->addAction(view->pageAction(QWebPage::Stop));
+//    toolBar->addWidget(locationEdit);
 //! [2]
 
 //! [3]
-    QMenu *effectMenu = menuBar()->addMenu(tr("&Effect"));
-    effectMenu->addAction("Highlight all links", this, SLOT(highlightAllLinks()));
+    QMenu *effectMenu = menuBar()->addMenu(tr("&Help"));
+//    effectMenu->addAction("Highlight all links", this, SLOT(highlightAllLinks()));
 
     rotateAction = new QAction(this);
     rotateAction->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
     rotateAction->setCheckable(true);
     rotateAction->setText(tr("Turn images upside down"));
-    connect(rotateAction, SIGNAL(toggled(bool)), this, SLOT(rotateImages(bool)));
-    effectMenu->addAction(rotateAction);
+//    connect(rotateAction, SIGNAL(toggled(bool)), this, SLOT(rotateImages(bool)));
+//    effectMenu->addAction(rotateAction);
 
-    QMenu *toolsMenu = menuBar()->addMenu(tr("&Tools"));
-    toolsMenu->addAction(tr("Remove GIF images"), this, SLOT(removeGifImages()));
-    toolsMenu->addAction(tr("Remove all inline frames"), this, SLOT(removeInlineFrames()));
-    toolsMenu->addAction(tr("Remove all object elements"), this, SLOT(removeObjectElements()));
-    toolsMenu->addAction(tr("Remove all embedded elements"), this, SLOT(removeEmbeddedElements()));
+//    QMenu *toolsMenu = menuBar()->addMenu(tr("&Tools"));
+//    toolsMenu->addAction(tr("Remove GIF images"), this, SLOT(removeGifImages()));
+//    toolsMenu->addAction(tr("Remove all inline frames"), this, SLOT(removeInlineFrames()));
+//    toolsMenu->addAction(tr("Remove all object elements"), this, SLOT(removeObjectElements()));
+//    toolsMenu->addAction(tr("Remove all embedded elements"), this, SLOT(removeEmbeddedElements()));
 
     setCentralWidget(view);
     setUnifiedTitleAndToolBarOnMac(true);

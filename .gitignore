@@ -1,3 +1,4 @@
+AppCapsule/Makefile
 AppCapsule/AppCapsule.app
 AppCapsule/*.o
 AppCapsule/moc_*.cpp
