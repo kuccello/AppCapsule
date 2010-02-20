@@ -1,0 +1,4 @@
+- Setup the project so it can be built on Windows
+  = embed mingw or cygwin into windows build
+  
+- Setup the project so it can be built on Linux

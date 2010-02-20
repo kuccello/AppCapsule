@@ -1,2 +1,18 @@
+
+- TODO: add a web server to the container
+
+- TODO: add ruby interpreter to the container
+
+- TODO: add php interpreter to the container
+
+- TODO: add python to interpreter to the container
+
+- TODO: compile w resources to make them less likely to be hacked
+
+- TODO: create a system to load the resources of the app from the internal web server
+
 - TODO: change behaviour of the right click context menu
-        > inherit the QWebView ,and override ContextMenuEvent 
+        done > inherit the QWebView ,and override ContextMenuEvent 
+        > add a context event system that AppCapsule apps can define
+        
+- COMPLETE: remove the browser navigation and buttons

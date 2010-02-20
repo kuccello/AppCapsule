@@ -1,0 +1,13 @@
+1) I want to figure out a way to expose some elements of the app container to app javascript in order to allow applications to modify the container as needed - example: I want to control the menu of the container from javascript.
+
+2) I want to take aspects of smalltalk development environments such as Self, Squeak and make it so that how you develop an application is you take AppCapsule for your platform and use it as the IDE for your project and the resources you add to your project are injected into the AppCapsule. I realize this may not be as desirable for the following situations:
+
+  - creating one application that runs on all platforms 
+    -- possible solution: figure out a way to package the app specific resources and move them into 
+                          different AppCapsules (per platform)
+                          
+  - you are packaging the IDE into the final product which makes it harder to protect your product because
+    someone could just spark up the IDE and hack at your project 
+    -- possible solution (1): have a "lock" on the IDE when shipping
+    -- possible solution (2): have a development version of the AppCapsule and a production version that
+                              you package your app into
